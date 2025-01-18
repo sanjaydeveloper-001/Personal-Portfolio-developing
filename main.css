@@ -195,7 +195,7 @@ body{
         opacity: 0.2;
     }
     .image2{
-        display: none;
+        display: block;
         position: fixed;
         top: 100px;
         width: 300px;
