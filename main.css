@@ -83,9 +83,9 @@ body{
 
 
 
-/* 
 
-/* About 
+
+/* About */
 .Aboutpage{
     display: none;
 }
@@ -97,7 +97,7 @@ body{
 }
 .About-Content-img{
    
-} */
+} 
 
 
 
@@ -195,7 +195,7 @@ body{
         opacity: 0.2;
     }
     .image2{
-        display: block;
+        display: none;
         position: fixed;
         top: 100px;
         width: 300px;
