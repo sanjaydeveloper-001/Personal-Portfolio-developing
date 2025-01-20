@@ -12,10 +12,12 @@ body{
 
 /* FrontPage */
 .frontpage{
+    
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
+    /* display: none; */
 }
 /* Content page */
 .Content{
@@ -32,7 +34,7 @@ body{
     margin-bottom: 30px;
 }
 .Content h1{
-    color: rgb(255, 136, 0);
+    color: rgb(255, 102, 0);
     font-size: 80px;
     font-family: "Rowdies", serif;
     letter-spacing: 5px;
@@ -53,20 +55,20 @@ body{
 .Content button{
     height: 50px;
     width: 160px;
-    background-color:rgb(255, 128, 0) ;
+    background-color:rgb(255, 102, 0) ;
     border: none;
     border-radius: 30px;
     color: white;
     font-size: 16px;
     margin-top: 50px;
     font-family: "Krona One", serif;
-    box-shadow: 0 0 7px rgb(255, 128, 0);
+    box-shadow: 0 0 7px rgb(255, 102, 0);
     cursor: pointer;
 }
 .Content button:hover{
     background-color: white;
-    box-shadow: 0 0 13px rgb(255, 128, 0);
-    color:rgb(255, 128, 0) ;
+    box-shadow: 0 0 13px rgb(255, 102, 0);
+    color:rgb(255, 102, 0) ;
 }
 
 .image{
@@ -87,17 +89,117 @@ body{
 
 /* About */
 .Aboutpage{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     display: none;
 }
-.summa{
+.Aboutimgdesign{
+    height: 299px;
+    width: 250px;
+    position: fixed;
+    left: 170px;
+    top: 100px;
+    z-index: 1;
+    border: 13px solid rgb(255, 102, 0);
+
+}
+.image3{
+    position: fixed;
+    left: 200px;
+    top: 70px;
+    z-index: 2;
+    width: 250px;
+    border: 13px solid #252525;
+}
+.Socialmedia{
+    position: fixed;
+    top: 400px;
+    left: 170px;
+    height: 250px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.solinks i{
+    font-size:25px;
+    color:rgb(255, 102, 0) ;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.solinks{
+    font-size: 20px;
+    color: white;
+}
+
+.AboutBox{
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    height: 580px;
+    width: 1000px;
+    padding-left: 15px;
+    padding-right: 150px;
     
 }
-.About-Content{
-    
+.titleName{
+    font-family: "Della Respira", serif;
+    font-size: 35px;
+    color: rgb(255, 102, 0);
 }
-.About-Content-img{
-   
-} 
+.hrTag{
+    width: 80px;
+    height: 5px;
+    border: none;
+    border-radius: 20px; 
+    background-color:white;
+    margin-top: 5px;
+}
+.AboutPara{
+    font-size: 23px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 25px;
+    line-height: 40px;
+}
+.Aboutbuttons{
+    margin-top: 105px;
+    display: flex;
+}
+.button{
+    height:45px;
+    width: 180px;
+    font-family: "Krona One", serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    border: none;
+    cursor: pointer;
+}
+.bt1{
+    background-color: rgb(255, 102, 0);
+    color: white;
+}
+.bt1:hover{
+    border: 2px solid rgb(255, 102, 0);
+    background-color:transparent;
+    color: rgb(255, 102, 0);
+}
+.bt2{
+    background-color:transparent;
+    border: 2px solid rgb(255, 102, 0);
+    color:rgb(255, 102, 0) ;
+}
+.bt2:hover{
+    background-color:rgb(255, 102, 0);
+    border: none;
+    color: white;
+}
+
 
 
 
@@ -201,4 +303,59 @@ body{
         width: 300px;
         z-index: 2;
     }
+
+
+    /* Aboutpage */
+
+    .Aboutpage{
+        height: 1000px;
+    }
+    .Aboutimgdesign{
+        position: absolute;
+        width: 200px;
+        height: 249px;
+        top: 80px;
+        left: 30px;
+    }
+    .image3{
+        position: absolute;
+        width: 200px;
+        left: 60px;
+        top: 60px;
+    }
+    .Socialmedia{
+        position: absolute;
+        top: 350px;
+        left: 30px;
+        height: 100px;
+        width: 300px;
+    }
+    .AboutBox{
+        position:absolute;
+        width: 300px;
+        height: 600px;
+        left: 30px;
+        top: 500px;
+        padding: 0;
+        margin: 0;
+
+    }
+    .AboutPara{
+        margin: 0;
+        margin-top: 20px;
+
+    }
+    .AboutPara span{
+        display: none;
+    }
+    .Aboutbuttons{
+        margin: 0;
+        flex-direction: column;
+    }
+    .button{
+        width: 280px;
+        height: 50px;
+
+    }
+    
 }
